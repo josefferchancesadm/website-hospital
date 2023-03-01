@@ -116,9 +116,20 @@ html {
     .header .navbar {
         position: absolute;
         top: 115%; right: 2rem;
-        width: 30rem;
+        width: 15rem;
         box-shadow: var(--box-shadow);
         background: #fff;
+        border: var(--border);
+        transform: scale(0);
+        opacity: 0;
+        transform-origin: top right;
+        transition: none;
+    }   
+
+    .header .active {
+        transform: scale(1);
+        opacity: 1;        
+        transition: 0.3s ease-out;
     }
 
     .header .navbar a{
@@ -126,6 +137,8 @@ html {
         font-size: 2rem;
         margin:2.5rem;
     }
+
+    
 
 }
 
